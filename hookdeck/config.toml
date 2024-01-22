@@ -1,0 +1,6 @@
+profile = "default"
+
+[default]
+  api_key = "3faw8kktjljfmzyt4ti2gogs9syyh6cunuahl7mz0smt8bu8wr"
+  workspace_id = "tm_isR18l7sUNdA"
+  workspace_mode = "inbound"

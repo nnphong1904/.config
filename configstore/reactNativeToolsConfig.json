@@ -5,10 +5,10 @@
 		"longPeriodToRemind": 90,
 		"popCoveragePercent": 0.1,
 		"enabled": true,
-		"daysLeftBeforeSurvey": 28,
+		"daysLeftBeforeSurvey": 23,
 		"surveyName": "userSatisfactionSurvey",
 		"surveyUrl": "https://www.surveymonkey.com/r/6FJGVDV",
-		"lastExtensionUsageDate": "2024-01-15T18:49:55.930Z"
+		"lastExtensionUsageDate": "2024-01-21T18:35:04.157Z"
 	},
 	"tipsConfig": {
 		"daysLeftBeforeGeneralTip": 2,
@@ -28,12 +28,14 @@
 					"shownDate": "2024-01-14T08:00:07.529Z"
 				},
 				"expoHostType": {},
-				"customEnvVariables": {}
+				"customEnvVariables": {
+					"shownDate": "2024-01-18T17:33:20.512Z"
+				}
 			},
 			"specificTips": {
 				"networkInspectorLogsColorTheme": {}
 			}
 		},
-		"lastExtensionUsageDate": "2024-01-15T18:49:54.910Z"
+		"lastExtensionUsageDate": "2024-01-21T18:35:03.655Z"
 	}
 }
