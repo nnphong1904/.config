@@ -13,8 +13,12 @@ set -gx PATH $JAVA_HOME/bin $PATH;
 set -gx LDFLAGS "-L/opt/homebrew/opt/jpeg/lib"
 set -gx CPPFLAGS "-I/opt/homebrew/opt/jpeg/include"
 
+
 set -gx PKG_CONFIG_PATH "/opt/homebrew/opt/jpeg/lib/pkgconfig"
 
+set -gx LDFLAGS "-L/opt/homebrew/opt/postgresql@16/lib"
+set -gx CPPFLAGS "-I/opt/homebrew/opt/postgresql@16/include"
+set -gx PKG_CONFIG_PATH "/opt/homebrew/opt/postgresql@16/lib/pkgconfig"
 starship init fish | source
 
 # pnpm
