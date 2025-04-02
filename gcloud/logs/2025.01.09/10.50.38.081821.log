@@ -1,0 +1,37 @@
+2025-01-09 10:50:38,098 DEBUG    root            Loaded Command Group: ['gcloud', 'compute']
+2025-01-09 10:50:38,100 DEBUG    root            Loaded Command Group: ['gcloud', 'compute', 'networks']
+2025-01-09 10:50:38,102 DEBUG    root            Loaded Command Group: ['gcloud', 'compute', 'networks', 'vpc_access']
+2025-01-09 10:50:38,103 DEBUG    root            Loaded Command Group: ['gcloud', 'compute', 'networks', 'vpc-access', 'connectors']
+2025-01-09 10:50:38,131 DEBUG    root            Loaded Command Group: ['gcloud', 'compute', 'networks', 'vpc-access', 'connectors', 'create']
+2025-01-09 10:50:38,139 DEBUG    root            Running [gcloud.compute.networks.vpc-access.connectors.create] with arguments: [--network: "default", --range: "10.8.0.0/28", --region: "us-central1", CONNECTOR: "bookielink-dev-connector"]
+2025-01-09 10:50:38,159 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): vpcaccess.googleapis.com:443
+2025-01-09 10:50:40,181 DEBUG    urllib3.connectionpool https://vpcaccess.googleapis.com:443 "POST /v1/projects/bookielink-dev/locations/us-central1/connectors?alt=json&connectorId=bookielink-dev-connector HTTP/1.1" 200 None
+2025-01-09 10:50:40,187 INFO     ___FILE_ONLY___ Create request issued for: [bookielink-dev-connector]
+
+2025-01-09 10:50:40,187 INFO     ___FILE_ONLY___ Waiting for operation [projects/bookielink-dev/locations/us-central1/operations/5adaecfb-7d6d-4807-9628-cbe3c67b09e2] to complete...
+2025-01-09 10:50:41,207 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): vpcaccess.googleapis.com:443
+2025-01-09 10:50:42,413 DEBUG    urllib3.connectionpool https://vpcaccess.googleapis.com:443 "GET /v1/projects/bookielink-dev/locations/us-central1/operations/5adaecfb-7d6d-4807-9628-cbe3c67b09e2?alt=json HTTP/1.1" 200 None
+2025-01-09 10:50:45,142 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): vpcaccess.googleapis.com:443
+2025-01-09 10:50:46,324 DEBUG    urllib3.connectionpool https://vpcaccess.googleapis.com:443 "GET /v1/projects/bookielink-dev/locations/us-central1/operations/5adaecfb-7d6d-4807-9628-cbe3c67b09e2?alt=json HTTP/1.1" 200 None
+2025-01-09 10:50:49,626 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): vpcaccess.googleapis.com:443
+2025-01-09 10:50:50,812 DEBUG    urllib3.connectionpool https://vpcaccess.googleapis.com:443 "GET /v1/projects/bookielink-dev/locations/us-central1/operations/5adaecfb-7d6d-4807-9628-cbe3c67b09e2?alt=json HTTP/1.1" 200 None
+2025-01-09 10:50:54,930 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): vpcaccess.googleapis.com:443
+2025-01-09 10:50:56,155 DEBUG    urllib3.connectionpool https://vpcaccess.googleapis.com:443 "GET /v1/projects/bookielink-dev/locations/us-central1/operations/5adaecfb-7d6d-4807-9628-cbe3c67b09e2?alt=json HTTP/1.1" 200 None
+2025-01-09 10:51:01,747 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): vpcaccess.googleapis.com:443
+2025-01-09 10:51:02,937 DEBUG    urllib3.connectionpool https://vpcaccess.googleapis.com:443 "GET /v1/projects/bookielink-dev/locations/us-central1/operations/5adaecfb-7d6d-4807-9628-cbe3c67b09e2?alt=json HTTP/1.1" 200 None
+2025-01-09 10:51:10,776 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): vpcaccess.googleapis.com:443
+2025-01-09 10:51:11,961 DEBUG    urllib3.connectionpool https://vpcaccess.googleapis.com:443 "GET /v1/projects/bookielink-dev/locations/us-central1/operations/5adaecfb-7d6d-4807-9628-cbe3c67b09e2?alt=json HTTP/1.1" 200 None
+2025-01-09 10:51:23,729 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): vpcaccess.googleapis.com:443
+2025-01-09 10:51:24,910 DEBUG    urllib3.connectionpool https://vpcaccess.googleapis.com:443 "GET /v1/projects/bookielink-dev/locations/us-central1/operations/5adaecfb-7d6d-4807-9628-cbe3c67b09e2?alt=json HTTP/1.1" 200 None
+2025-01-09 10:51:40,746 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): vpcaccess.googleapis.com:443
+2025-01-09 10:51:41,974 DEBUG    urllib3.connectionpool https://vpcaccess.googleapis.com:443 "GET /v1/projects/bookielink-dev/locations/us-central1/operations/5adaecfb-7d6d-4807-9628-cbe3c67b09e2?alt=json HTTP/1.1" 200 None
+2025-01-09 10:52:03,164 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): vpcaccess.googleapis.com:443
+2025-01-09 10:52:04,365 DEBUG    urllib3.connectionpool https://vpcaccess.googleapis.com:443 "GET /v1/projects/bookielink-dev/locations/us-central1/operations/5adaecfb-7d6d-4807-9628-cbe3c67b09e2?alt=json HTTP/1.1" 200 None
+2025-01-09 10:52:33,915 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): vpcaccess.googleapis.com:443
+2025-01-09 10:52:35,107 DEBUG    urllib3.connectionpool https://vpcaccess.googleapis.com:443 "GET /v1/projects/bookielink-dev/locations/us-central1/operations/5adaecfb-7d6d-4807-9628-cbe3c67b09e2?alt=json HTTP/1.1" 200 None
+2025-01-09 10:52:35,260 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): vpcaccess.googleapis.com:443
+2025-01-09 10:52:36,453 DEBUG    urllib3.connectionpool https://vpcaccess.googleapis.com:443 "GET /v1/projects/bookielink-dev/locations/us-central1/connectors/bookielink-dev-connector?alt=json HTTP/1.1" 200 None
+2025-01-09 10:52:36,458 INFO     ___FILE_ONLY___ Created connector [bookielink-dev-connector].
+
+2025-01-09 10:52:36,459 DEBUG    root            Chosen display Format:none
+2025-01-09 10:52:36,460 INFO     root            Display format: "none"

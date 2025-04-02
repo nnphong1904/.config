@@ -5,6 +5,7 @@ set -gx PATH $ANDROID_HOME/tools $PATH;
 set -gx PATH $ANDROID_HOME/tools/bin $PATH;
 set -gx PATH $ANDROID_HOME/platform-tools $PATH;
 set -gx PATH $ANDROID_HOME/emulator $PATH
+set -gx PATH "$PATH:$HOME/.rvm/bin"
 eval "$(/opt/homebrew/bin/brew shellenv)"
 
 set --export JAVA_HOME /Library/Java/JavaVirtualMachines/zulu-17.jdk/Contents/Home;
@@ -27,3 +28,8 @@ if not string match -q -- $PNPM_HOME $PATH
   set -gx PATH "$PNPM_HOME" $PATH
 end
 # pnpm end
+
+zoxide init fish | source
+# bun
+set --export BUN_INSTALL "$HOME/.bun"
+set --export PATH $BUN_INSTALL/bin $PATH

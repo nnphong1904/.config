@@ -1,0 +1,22 @@
+2025-01-09 11:22:50,834 DEBUG    root            Loaded Command Group: ['gcloud', 'functions']
+2025-01-09 11:22:50,834 ERROR    root            (gcloud.functions) Command name argument expected.
+2025-01-09 11:22:50,835 DEBUG    root            Loaded Command Group: ['gcloud', 'functions', 'regions']
+2025-01-09 11:22:51,009 DEBUG    root            Loaded Command Group: ['gcloud', 'functions', 'add_invoker_policy_binding']
+2025-01-09 11:22:51,015 DEBUG    root            Loaded Command Group: ['gcloud', 'functions', 'describe']
+2025-01-09 11:22:51,018 DEBUG    root            Loaded Command Group: ['gcloud', 'functions', 'set_iam_policy']
+2025-01-09 11:22:51,020 DEBUG    root            Loaded Command Group: ['gcloud', 'functions', 'add_iam_policy_binding']
+2025-01-09 11:22:51,024 DEBUG    root            Loaded Command Group: ['gcloud', 'functions', 'call']
+2025-01-09 11:22:51,025 DEBUG    root            No implementation for release track [GA] for element: [/opt/homebrew/Caskroom/google-cloud-sdk/504.0.1/google-cloud-sdk/lib/surface/functions/local]
+2025-01-09 11:22:51,027 DEBUG    root            Loaded Command Group: ['gcloud', 'functions', 'remove_iam_policy_binding']
+2025-01-09 11:22:51,029 DEBUG    root            Loaded Command Group: ['gcloud', 'functions', 'delete']
+2025-01-09 11:22:51,030 DEBUG    root            Loaded Command Group: ['gcloud', 'functions', 'logs']
+2025-01-09 11:22:51,032 DEBUG    root            Loaded Command Group: ['gcloud', 'functions', 'list']
+2025-01-09 11:22:51,048 DEBUG    root            Loaded Command Group: ['gcloud', 'functions', 'deploy']
+2025-01-09 11:22:51,070 DEBUG    root            Loaded Command Group: ['gcloud', 'functions', 'remove_invoker_policy_binding']
+2025-01-09 11:22:51,072 DEBUG    root            Loaded Command Group: ['gcloud', 'functions', 'event_types']
+2025-01-09 11:22:51,073 DEBUG    root            No implementation for release track [GA] for element: [/opt/homebrew/Caskroom/google-cloud-sdk/504.0.1/google-cloud-sdk/lib/surface/functions/upgrade]
+2025-01-09 11:22:51,073 DEBUG    root            No implementation for release track [GA] for element: [/opt/homebrew/Caskroom/google-cloud-sdk/504.0.1/google-cloud-sdk/lib/surface/functions/detach]
+2025-01-09 11:22:51,075 DEBUG    root            Loaded Command Group: ['gcloud', 'functions', 'get_iam_policy']
+2025-01-09 11:22:51,076 DEBUG    root            Loaded Command Group: ['gcloud', 'functions', 'runtimes']
+2025-01-09 11:22:51,077 DEBUG    root            Chosen display Format:table[no-heading,margin=6,width=80]([0]:label='':align=left:width=22,[1]:label='':align=left:wrap)
+2025-01-09 11:22:51,085 DEBUG    root            Chosen display Format:table[no-heading,margin=6,width=80]([0]:label='':align=left:width=22,[1]:label='':align=left:wrap)

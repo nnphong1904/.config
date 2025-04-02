@@ -1,0 +1,52 @@
+2025-01-09 10:42:14,361 DEBUG    root            Loaded Command Group: ['gcloud', 'compute']
+2025-01-09 10:42:14,362 DEBUG    root            Loaded Command Group: ['gcloud', 'compute', 'networks']
+2025-01-09 10:42:14,366 DEBUG    root            Loaded Command Group: ['gcloud', 'compute', 'networks', 'list']
+2025-01-09 10:42:14,367 DEBUG    root            Running [gcloud.compute.networks.list] with arguments: []
+2025-01-09 10:42:14,552 DEBUG    root            (gcloud.compute.networks.list) The required property [project] is not currently set.
+It can be set on a per-command basis by re-running your command with the [--project] flag.
+
+You may set it for your current workspace by running:
+
+  $ gcloud config set project VALUE
+
+or it can be set temporarily by the environment variable [CLOUDSDK_CORE_PROJECT]
+Traceback (most recent call last):
+  File "/opt/homebrew/Caskroom/google-cloud-sdk/504.0.1/google-cloud-sdk/lib/googlecloudsdk/calliope/cli.py", line 998, in Execute
+    resources = calliope_command.Run(cli=self, args=args)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Caskroom/google-cloud-sdk/504.0.1/google-cloud-sdk/lib/googlecloudsdk/calliope/backend.py", line 843, in Run
+    resources = command_instance.Run(args)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Caskroom/google-cloud-sdk/504.0.1/google-cloud-sdk/lib/surface/compute/networks/list.py", line 41, in Run
+    request_data = lister.ParseNamesAndRegexpFlags(args, holder.resources)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Caskroom/google-cloud-sdk/504.0.1/google-cloud-sdk/lib/googlecloudsdk/api_lib/compute/lister.py", line 813, in ParseNamesAndRegexpFlags
+    properties.VALUES.core.project.GetOrFail(),
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Caskroom/google-cloud-sdk/504.0.1/google-cloud-sdk/lib/googlecloudsdk/core/properties.py", line 4139, in GetOrFail
+    return self.Get(required=True)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Caskroom/google-cloud-sdk/504.0.1/google-cloud-sdk/lib/googlecloudsdk/core/properties.py", line 4155, in Get
+    property_value = self.GetPropertyValue(required, validate)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Caskroom/google-cloud-sdk/504.0.1/google-cloud-sdk/lib/googlecloudsdk/core/properties.py", line 4174, in GetPropertyValue
+    property_value = _GetProperty(self,
+                     ^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Caskroom/google-cloud-sdk/504.0.1/google-cloud-sdk/lib/googlecloudsdk/core/properties.py", line 4507, in _GetProperty
+    raise RequiredPropertyError(prop, flag=flag_to_use)
+googlecloudsdk.core.properties.RequiredPropertyError: The required property [project] is not currently set.
+It can be set on a per-command basis by re-running your command with the [--project] flag.
+
+You may set it for your current workspace by running:
+
+  $ gcloud config set project VALUE
+
+or it can be set temporarily by the environment variable [CLOUDSDK_CORE_PROJECT]
+2025-01-09 10:42:14,554 ERROR    root            (gcloud.compute.networks.list) The required property [project] is not currently set.
+It can be set on a per-command basis by re-running your command with the [--project] flag.
+
+You may set it for your current workspace by running:
+
+  $ gcloud config set project VALUE
+
+or it can be set temporarily by the environment variable [CLOUDSDK_CORE_PROJECT]

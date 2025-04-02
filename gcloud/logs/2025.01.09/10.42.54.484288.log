@@ -1,0 +1,106 @@
+2025-01-09 10:42:54,498 DEBUG    root            Loaded Command Group: ['gcloud', 'compute']
+2025-01-09 10:42:54,500 DEBUG    root            Loaded Command Group: ['gcloud', 'compute', 'networks']
+2025-01-09 10:42:54,505 DEBUG    root            Loaded Command Group: ['gcloud', 'compute', 'networks', 'list']
+2025-01-09 10:42:54,505 DEBUG    root            Running [gcloud.compute.networks.list] with arguments: []
+2025-01-09 10:42:54,561 DEBUG    root            Chosen display Format:    table(
+      name,
+      x_gcloud_subnet_mode:label=SUBNET_MODE,
+      x_gcloud_bgp_routing_mode:label=BGP_ROUTING_MODE,
+      IPv4Range:label=IPV4_RANGE,
+      gatewayIPv4
+    )
+2025-01-09 10:42:54,561 INFO     root            Display format: "    table(
+      name,
+      x_gcloud_subnet_mode:label=SUBNET_MODE,
+      x_gcloud_bgp_routing_mode:label=BGP_ROUTING_MODE,
+      IPv4Range:label=IPV4_RANGE,
+      gatewayIPv4
+    )"
+2025-01-09 10:42:54,565 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): compute.googleapis.com:443
+2025-01-09 10:42:55,021 DEBUG    urllib3.connectionpool https://compute.googleapis.com:443 "GET /compute/v1/projects/bookielink-dev/global/networks?alt=json&maxResults=500 HTTP/1.1" 403 None
+2025-01-09 10:42:55,069 DEBUG    root            Chosen display Format:value(links.flatten(show="values",separator="
+"))
+2025-01-09 10:42:55,090 DEBUG    root            Chosen display Format:default
+2025-01-09 10:42:55,092 DEBUG    root            Chosen display Format:value(links.flatten(show="values",separator="
+"))
+2025-01-09 10:42:55,092 DEBUG    root            Chosen display Format:default
+2025-01-09 10:42:55,093 DEBUG    root            Chosen display Format:value(links.flatten(show="values",separator="
+"))
+2025-01-09 10:42:55,093 DEBUG    root            Chosen display Format:default
+2025-01-09 10:42:55,101 DEBUG    root            Chosen display Format:value(links.flatten(show="values",separator="
+"))
+2025-01-09 10:42:55,102 DEBUG    root            Chosen display Format:default
+2025-01-09 10:42:55,094 DEBUG    root            (gcloud.compute.networks.list) PERMISSION_DENIED: Compute Engine API has not been used in project bookielink-dev before or it is disabled. Enable it by visiting https://console.developers.google.com/apis/api/compute.googleapis.com/overview?project=bookielink-dev then retry. If you enabled this API recently, wait a few minutes for the action to propagate to our systems and retry. This command is authenticated as phong@miyagami.com which is the active account specified by the [core/account] property.
+Google developers console API activation
+https://console.developers.google.com/apis/api/compute.googleapis.com/overview?project=bookielink-dev
+- '@type': type.googleapis.com/google.rpc.ErrorInfo
+  domain: googleapis.com
+  metadata:
+    consumer: projects/bookielink-dev
+    service: compute.googleapis.com
+  reason: SERVICE_DISABLED
+Traceback (most recent call last):
+  File "/opt/homebrew/Caskroom/google-cloud-sdk/504.0.1/google-cloud-sdk/lib/googlecloudsdk/calliope/cli.py", line 998, in Execute
+    resources = calliope_command.Run(cli=self, args=args)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Caskroom/google-cloud-sdk/504.0.1/google-cloud-sdk/lib/googlecloudsdk/calliope/backend.py", line 845, in Run
+    display_info=self.ai.display_info).Display()
+                                       ^^^^^^^^^
+  File "/opt/homebrew/Caskroom/google-cloud-sdk/504.0.1/google-cloud-sdk/lib/googlecloudsdk/calliope/display.py", line 487, in Display
+    self._printer.Print(self._resources)
+  File "/opt/homebrew/Caskroom/google-cloud-sdk/504.0.1/google-cloud-sdk/lib/googlecloudsdk/core/resource/resource_printer_base.py", line 301, in Print
+    for resource in resources:
+  File "/opt/homebrew/Caskroom/google-cloud-sdk/504.0.1/google-cloud-sdk/lib/googlecloudsdk/core/util/peek_iterable.py", line 211, in __next__
+    item = self._NextItem()
+           ^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Caskroom/google-cloud-sdk/504.0.1/google-cloud-sdk/lib/googlecloudsdk/core/util/peek_iterable.py", line 183, in _NextItem
+    return next(self._iterable)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Caskroom/google-cloud-sdk/504.0.1/google-cloud-sdk/lib/surface/compute/networks/list.py", line 46, in <genexpr>
+    return (networks_utils.AddModesForListFormat(resource)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Caskroom/google-cloud-sdk/504.0.1/google-cloud-sdk/lib/googlecloudsdk/api_lib/compute/lister.py", line 1001, in __call__
+    for item in GetGlobalResourcesDicts(
+  File "/opt/homebrew/Caskroom/google-cloud-sdk/504.0.1/google-cloud-sdk/lib/googlecloudsdk/api_lib/compute/request_helper.py", line 247, in ListJson
+    for item in _ListCore(requests, http, batch_url, errors, _HandleJsonList):
+  File "/opt/homebrew/Caskroom/google-cloud-sdk/504.0.1/google-cloud-sdk/lib/googlecloudsdk/api_lib/compute/request_helper.py", line 144, in _ListCore
+    responses, request_errors = single_request_helper.MakeSingleRequest(
+                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Caskroom/google-cloud-sdk/504.0.1/google-cloud-sdk/lib/googlecloudsdk/api_lib/compute/single_request_helper.py", line 69, in MakeSingleRequest
+    response = getattr(service, method)(request=request_body)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Caskroom/google-cloud-sdk/504.0.1/google-cloud-sdk/lib/googlecloudsdk/generated_clients/apis/compute/v1/compute_v1_client.py", line 9892, in List
+    return self._RunMethod(
+           ^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Caskroom/google-cloud-sdk/504.0.1/google-cloud-sdk/lib/third_party/apitools/base/py/base_api.py", line 744, in _RunMethod
+    http_response = http_wrapper.MakeRequest(
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Caskroom/google-cloud-sdk/504.0.1/google-cloud-sdk/lib/third_party/apitools/base/py/http_wrapper.py", line 348, in MakeRequest
+    return _MakeRequestNoRetry(
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Caskroom/google-cloud-sdk/504.0.1/google-cloud-sdk/lib/third_party/apitools/base/py/http_wrapper.py", line 406, in _MakeRequestNoRetry
+    check_response_func(response)
+  File "/opt/homebrew/Caskroom/google-cloud-sdk/504.0.1/google-cloud-sdk/lib/googlecloudsdk/api_lib/util/apis.py", line 231, in _CheckResponse
+    _CheckForApiEnablementError(response_as_error)
+  File "/opt/homebrew/Caskroom/google-cloud-sdk/504.0.1/google-cloud-sdk/lib/googlecloudsdk/api_lib/util/apis.py", line 197, in _CheckForApiEnablementError
+    PromptToEnableApi(*enablement_info)
+  File "/opt/homebrew/Caskroom/google-cloud-sdk/504.0.1/google-cloud-sdk/lib/googlecloudsdk/api_lib/util/apis.py", line 180, in PromptToEnableApi
+    raise exception
+googlecloudsdk.api_lib.util.exceptions.HttpException: PERMISSION_DENIED: Compute Engine API has not been used in project bookielink-dev before or it is disabled. Enable it by visiting https://console.developers.google.com/apis/api/compute.googleapis.com/overview?project=bookielink-dev then retry. If you enabled this API recently, wait a few minutes for the action to propagate to our systems and retry. This command is authenticated as phong@miyagami.com which is the active account specified by the [core/account] property.
+Google developers console API activation
+https://console.developers.google.com/apis/api/compute.googleapis.com/overview?project=bookielink-dev
+- '@type': type.googleapis.com/google.rpc.ErrorInfo
+  domain: googleapis.com
+  metadata:
+    consumer: projects/bookielink-dev
+    service: compute.googleapis.com
+  reason: SERVICE_DISABLED
+2025-01-09 10:42:55,103 ERROR    root            (gcloud.compute.networks.list) PERMISSION_DENIED: Compute Engine API has not been used in project bookielink-dev before or it is disabled. Enable it by visiting https://console.developers.google.com/apis/api/compute.googleapis.com/overview?project=bookielink-dev then retry. If you enabled this API recently, wait a few minutes for the action to propagate to our systems and retry. This command is authenticated as phong@miyagami.com which is the active account specified by the [core/account] property.
+Google developers console API activation
+https://console.developers.google.com/apis/api/compute.googleapis.com/overview?project=bookielink-dev
+- '@type': type.googleapis.com/google.rpc.ErrorInfo
+  domain: googleapis.com
+  metadata:
+    consumer: projects/bookielink-dev
+    service: compute.googleapis.com
+  reason: SERVICE_DISABLED

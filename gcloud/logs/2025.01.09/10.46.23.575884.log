@@ -1,0 +1,89 @@
+2025-01-09 10:46:23,588 DEBUG    root            Loaded Command Group: ['gcloud', 'compute']
+2025-01-09 10:46:23,590 DEBUG    root            Loaded Command Group: ['gcloud', 'compute', 'routers']
+2025-01-09 10:46:23,599 DEBUG    root            Loaded Command Group: ['gcloud', 'compute', 'routers', 'create']
+2025-01-09 10:46:23,600 DEBUG    root            Running [gcloud.compute.routers.create] with arguments: [--network: "NETWORK_NAME", --region: "REGION", NAME: "ROUTER_NAME"]
+2025-01-09 10:46:23,656 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): compute.googleapis.com:443
+2025-01-09 10:46:23,910 DEBUG    urllib3.connectionpool https://compute.googleapis.com:443 "POST /compute/v1/projects/bookielink-dev/regions/REGION/routers?alt=json HTTP/1.1" 403 None
+2025-01-09 10:46:23,956 DEBUG    root            Chosen display Format:value(message.list(separator="
+"))
+2025-01-09 10:46:23,977 DEBUG    root            Chosen display Format:default
+2025-01-09 10:46:23,979 DEBUG    root            Chosen display Format:value(message.list(separator="
+"))
+2025-01-09 10:46:23,980 DEBUG    root            Chosen display Format:default
+2025-01-09 10:46:23,981 DEBUG    root            Chosen display Format:value(message.list(separator="
+"))
+2025-01-09 10:46:23,981 DEBUG    root            Chosen display Format:default
+2025-01-09 10:46:23,982 DEBUG    root            (gcloud.compute.routers.create) PERMISSION_DENIED: Permission denied on 'locations/region' (or it may not exist). This command is authenticated as phong@miyagami.com which is the active account specified by the [core/account] property.
+Permission denied on 'locations/region' (or it may not exist).
+- '@type': type.googleapis.com/google.rpc.ErrorInfo
+  domain: googleapis.com
+  metadatas:
+    consumer: projects/bookielink-dev
+    location: region
+    service: compute.googleapis.com
+  reason: LOCATION_POLICY_VIOLATED
+Traceback (most recent call last):
+  File "/opt/homebrew/Caskroom/google-cloud-sdk/504.0.1/google-cloud-sdk/lib/googlecloudsdk/calliope/cli.py", line 998, in Execute
+    resources = calliope_command.Run(cli=self, args=args)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Caskroom/google-cloud-sdk/504.0.1/google-cloud-sdk/lib/googlecloudsdk/calliope/backend.py", line 843, in Run
+    resources = command_instance.Run(args)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Caskroom/google-cloud-sdk/504.0.1/google-cloud-sdk/lib/surface/compute/routers/create.py", line 161, in Run
+    return self._Run(args)
+           ^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Caskroom/google-cloud-sdk/504.0.1/google-cloud-sdk/lib/surface/compute/routers/create.py", line 111, in _Run
+    result = service.Insert(
+             ^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Caskroom/google-cloud-sdk/504.0.1/google-cloud-sdk/lib/googlecloudsdk/generated_clients/apis/compute/v1/compute_v1_client.py", line 17106, in Insert
+    return self._RunMethod(
+           ^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Caskroom/google-cloud-sdk/504.0.1/google-cloud-sdk/lib/third_party/apitools/base/py/base_api.py", line 747, in _RunMethod
+    return self.ProcessHttpResponse(method_config, http_response, request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Caskroom/google-cloud-sdk/504.0.1/google-cloud-sdk/lib/third_party/apitools/base/py/base_api.py", line 753, in ProcessHttpResponse
+    self.__ProcessHttpResponse(method_config, http_response, request))
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Caskroom/google-cloud-sdk/504.0.1/google-cloud-sdk/lib/third_party/apitools/base/py/base_api.py", line 612, in __ProcessHttpResponse
+    raise exceptions.HttpError.FromResponse(
+apitools.base.py.exceptions.HttpForbiddenError: HttpError accessing <https://compute.googleapis.com/compute/v1/projects/bookielink-dev/regions/REGION/routers?alt=json>: response: <{'vary': 'Origin, X-Origin, Referer', 'content-type': 'application/json; charset=UTF-8', 'content-encoding': 'gzip', 'date': 'Thu, 09 Jan 2025 03:46:23 GMT', 'server': 'ESF', 'cache-control': 'private', 'x-xss-protection': '0', 'x-frame-options': 'SAMEORIGIN', 'x-content-type-options': 'nosniff', 'alt-svc': 'h3=":443"; ma=2592000,h3-29=":443"; ma=2592000', 'transfer-encoding': 'chunked', 'status': 403}>, content <{
+  "error": {
+    "code": 403,
+    "message": "Permission denied on 'locations/region' (or it may not exist).",
+    "errors": [
+      {
+        "message": "Permission denied on 'locations/region' (or it may not exist).",
+        "domain": "global",
+        "reason": "forbidden"
+      }
+    ],
+    "status": "PERMISSION_DENIED",
+    "details": [
+      {
+        "@type": "type.googleapis.com/google.rpc.ErrorInfo",
+        "reason": "LOCATION_POLICY_VIOLATED",
+        "domain": "googleapis.com",
+        "metadatas": {
+          "service": "compute.googleapis.com",
+          "location": "region",
+          "consumer": "projects/bookielink-dev"
+        }
+      },
+      {
+        "@type": "type.googleapis.com/google.rpc.LocalizedMessage",
+        "locale": "en-US",
+        "message": "Permission denied on 'locations/region' (or it may not exist)."
+      }
+    ]
+  }
+}
+>
+2025-01-09 10:46:23,986 ERROR    root            (gcloud.compute.routers.create) PERMISSION_DENIED: Permission denied on 'locations/region' (or it may not exist). This command is authenticated as phong@miyagami.com which is the active account specified by the [core/account] property.
+Permission denied on 'locations/region' (or it may not exist).
+- '@type': type.googleapis.com/google.rpc.ErrorInfo
+  domain: googleapis.com
+  metadatas:
+    consumer: projects/bookielink-dev
+    location: region
+    service: compute.googleapis.com
+  reason: LOCATION_POLICY_VIOLATED

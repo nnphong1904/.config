@@ -1,0 +1,13 @@
+color = ''
+project-name = 'default'
+[default]
+account_id = 'acct_1Oh7wyG3hjdajIxO'
+device_name = 'MBP-cua-Phong'
+display_name = 'Horsenest'
+live_mode_api_key = 'rk_live_***********************************************************************************************bACi'
+live_mode_key_expires_at = '2024-11-17'
+live_mode_pub_key = 'pk_live_51Oh7wyG3hjdajIxO2X9e80Pxnd81hs81DDqZoauMo5DfeiZFkpxbR6W5N2Dz3r4gelod2Qa5SZQRuuKwHKNlP1f500bkmW5Qxt'
+test_mode_api_key = 'rk_test_51Oh7wyG3hjdajIxOghEKQCzuGeXchLpQMphc9h5QErc0S7oEgLJCnuodvN5Ycd0TXxbhT0AYp7Ht2Lo1BnzMDuHs00PluhGT7Q'
+test_mode_key_expires_at = '2024-11-17'
+test_mode_pub_key = 'pk_test_51Oh7wyG3hjdajIxOaWB8qBpxnYZE7UwKjh8Dyjxd419niteXGRpNcg7tInxS9Jk08nIw03Z4kDgcUHTW7N9B7czE00RYU1NFuO'
+

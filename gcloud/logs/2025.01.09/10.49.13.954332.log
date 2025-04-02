@@ -1,0 +1,47 @@
+2025-01-09 10:49:13,970 DEBUG    root            Loaded Command Group: ['gcloud', 'compute']
+2025-01-09 10:49:13,973 DEBUG    root            Loaded Command Group: ['gcloud', 'compute', 'addresses']
+2025-01-09 10:49:13,979 DEBUG    root            Loaded Command Group: ['gcloud', 'compute', 'addresses', 'create']
+2025-01-09 10:49:13,980 DEBUG    root            Running [gcloud.compute.addresses.create] with arguments: [--region: "us-central1", NAME:1: "['bookielink-router-dev-ip']"]
+2025-01-09 10:49:14,038 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): compute.googleapis.com:443
+2025-01-09 10:49:15,515 DEBUG    urllib3.connectionpool https://compute.googleapis.com:443 "POST /compute/v1/projects/bookielink-dev/regions/us-central1/addresses?alt=json HTTP/1.1" 200 None
+2025-01-09 10:49:15,518 DEBUG    root            Operations to inspect: [(<Operation
+ id: 686764122696776148
+ insertTime: '2025-01-08T19:49:15.392-08:00'
+ kind: 'compute#operation'
+ name: 'operation-1736394555158-62b3ddca66f6d-f78d317a-3d5c013e'
+ operationType: 'insert'
+ progress: 0
+ region: 'https://www.googleapis.com/compute/v1/projects/bookielink-dev/regions/us-central1'
+ selfLink: 'https://www.googleapis.com/compute/v1/projects/bookielink-dev/regions/us-central1/operations/operation-1736394555158-62b3ddca66f6d-f78d317a-3d5c013e'
+ startTime: '2025-01-08T19:49:15.394-08:00'
+ status: StatusValueValuesEnum(RUNNING, 2)
+ targetId: 2246526778079377876
+ targetLink: 'https://www.googleapis.com/compute/v1/projects/bookielink-dev/regions/us-central1/addresses/bookielink-router-dev-ip'
+ user: 'phong@miyagami.com'
+ warnings: []>, 3)]
+2025-01-09 10:49:15,520 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): compute.googleapis.com:443
+2025-01-09 10:49:16,766 DEBUG    urllib3.connectionpool https://compute.googleapis.com:443 "POST /compute/v1/projects/bookielink-dev/regions/us-central1/operations/operation-1736394555158-62b3ddca66f6d-f78d317a-3d5c013e/wait?alt=json HTTP/1.1" 200 None
+2025-01-09 10:49:16,813 DEBUG    root            Operations to inspect: [(<Operation
+ endTime: '2025-01-08T19:49:15.665-08:00'
+ id: 686764122696776148
+ insertTime: '2025-01-08T19:49:15.392-08:00'
+ kind: 'compute#operation'
+ name: 'operation-1736394555158-62b3ddca66f6d-f78d317a-3d5c013e'
+ operationType: 'insert'
+ progress: 100
+ region: 'https://www.googleapis.com/compute/v1/projects/bookielink-dev/regions/us-central1'
+ selfLink: 'https://www.googleapis.com/compute/v1/projects/bookielink-dev/regions/us-central1/operations/operation-1736394555158-62b3ddca66f6d-f78d317a-3d5c013e'
+ startTime: '2025-01-08T19:49:15.394-08:00'
+ status: StatusValueValuesEnum(DONE, 0)
+ targetId: 2246526778079377876
+ targetLink: 'https://www.googleapis.com/compute/v1/projects/bookielink-dev/regions/us-central1/addresses/bookielink-router-dev-ip'
+ user: 'phong@miyagami.com'
+ warnings: []>, 3)]
+2025-01-09 10:49:16,813 INFO     ___FILE_ONLY___ Created [https://www.googleapis.com/compute/v1/projects/bookielink-dev/regions/us-central1/addresses/bookielink-router-dev-ip].
+
+2025-01-09 10:49:16,817 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): compute.googleapis.com:443
+2025-01-09 10:49:18,068 DEBUG    urllib3.connectionpool https://compute.googleapis.com:443 "GET /compute/v1/projects/bookielink-dev/regions/us-central1/addresses/bookielink-router-dev-ip?alt=json HTTP/1.1" 200 None
+2025-01-09 10:49:18,072 DEBUG    root            Chosen display Format:none
+2025-01-09 10:49:18,072 INFO     root            Display format: "none"
+2025-01-09 10:49:18,097 INFO     root            cache collection=compute.addresses api_version=v1 params=['project', 'region', 'address']
+2025-01-09 10:49:18,097 INFO     root            cache collection=compute.globalAddresses api_version=v1 params=['project', 'address']

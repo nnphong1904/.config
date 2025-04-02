@@ -1,0 +1,29 @@
+{
+	"motd": {
+		"cloudBuildErrorAfter": 1594252800000,
+		"cloudBuildWarnAfter": 1590019200000,
+		"defaultNode10After": 1594252800000,
+		"minVersion": "3.0.5",
+		"node8DeploysDisabledAfter": 1613390400000,
+		"node8RuntimeDisabledAfter": 1615809600000,
+		"node8WarnAfter": 1600128000000,
+		"fetched": 1743063046348
+	},
+	"activeProjects": {
+		"/Users/phongnguyen/Developer/miyagami/Bookielink/cloud-function": "bookielink-dev",
+		"/Users/phongnguyen/Developer/miyagami/Bookielink/bookielink-app": "bookielink-dev"
+	},
+	"emulator-analytics-clientId": "60b462ff-3eb5-447e-8843-1042171f2aef",
+	"adminsdkconfig": {
+		"bookielink-dev": {
+			"projectId": "bookielink-dev",
+			"storageBucket": "bookielink-dev.firebasestorage.app"
+		},
+		"techsoftx-v2-dev": {
+			"projectId": "techsoftx-v2-dev",
+			"storageBucket": "techsoftx-v2-dev.firebasestorage.app"
+		}
+	},
+	"additionalAccounts": [],
+	"activeAccounts": {}
+}

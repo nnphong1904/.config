@@ -1,0 +1,46 @@
+2025-01-09 10:47:52,388 DEBUG    root            Loaded Command Group: ['gcloud', 'compute']
+2025-01-09 10:47:52,390 DEBUG    root            Loaded Command Group: ['gcloud', 'compute', 'routers']
+2025-01-09 10:47:52,397 DEBUG    root            Loaded Command Group: ['gcloud', 'compute', 'routers', 'create']
+2025-01-09 10:47:52,398 DEBUG    root            Running [gcloud.compute.routers.create] with arguments: [--network: "default", --region: "us-central1", NAME: "bookielink_router"]
+2025-01-09 10:47:52,457 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): compute.googleapis.com:443
+2025-01-09 10:47:53,643 DEBUG    urllib3.connectionpool https://compute.googleapis.com:443 "POST /compute/v1/projects/bookielink-dev/regions/us-central1/routers?alt=json HTTP/1.1" 400 None
+2025-01-09 10:47:53,691 DEBUG    root            (gcloud.compute.routers.create) HTTPError 400: Invalid value for field 'resource.name': 'bookielink_router'. Must be a match of regex '(?:[a-z](?:[-a-z0-9]{0,61}[a-z0-9])?)'
+Traceback (most recent call last):
+  File "/opt/homebrew/Caskroom/google-cloud-sdk/504.0.1/google-cloud-sdk/lib/googlecloudsdk/calliope/cli.py", line 998, in Execute
+    resources = calliope_command.Run(cli=self, args=args)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Caskroom/google-cloud-sdk/504.0.1/google-cloud-sdk/lib/googlecloudsdk/calliope/backend.py", line 843, in Run
+    resources = command_instance.Run(args)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Caskroom/google-cloud-sdk/504.0.1/google-cloud-sdk/lib/surface/compute/routers/create.py", line 161, in Run
+    return self._Run(args)
+           ^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Caskroom/google-cloud-sdk/504.0.1/google-cloud-sdk/lib/surface/compute/routers/create.py", line 111, in _Run
+    result = service.Insert(
+             ^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Caskroom/google-cloud-sdk/504.0.1/google-cloud-sdk/lib/googlecloudsdk/generated_clients/apis/compute/v1/compute_v1_client.py", line 17106, in Insert
+    return self._RunMethod(
+           ^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Caskroom/google-cloud-sdk/504.0.1/google-cloud-sdk/lib/third_party/apitools/base/py/base_api.py", line 747, in _RunMethod
+    return self.ProcessHttpResponse(method_config, http_response, request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Caskroom/google-cloud-sdk/504.0.1/google-cloud-sdk/lib/third_party/apitools/base/py/base_api.py", line 753, in ProcessHttpResponse
+    self.__ProcessHttpResponse(method_config, http_response, request))
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Caskroom/google-cloud-sdk/504.0.1/google-cloud-sdk/lib/third_party/apitools/base/py/base_api.py", line 612, in __ProcessHttpResponse
+    raise exceptions.HttpError.FromResponse(
+apitools.base.py.exceptions.HttpBadRequestError: HttpError accessing <https://compute.googleapis.com/compute/v1/projects/bookielink-dev/regions/us-central1/routers?alt=json>: response: <{'content-type': 'application/json; charset=UTF-8', 'vary': 'Origin, X-Origin, Referer', 'content-encoding': 'gzip', 'date': 'Thu, 09 Jan 2025 03:47:53 GMT', 'server': 'ESF', 'cache-control': 'private', 'x-xss-protection': '0', 'x-frame-options': 'SAMEORIGIN', 'x-content-type-options': 'nosniff', 'alt-svc': 'h3=":443"; ma=2592000,h3-29=":443"; ma=2592000', 'transfer-encoding': 'chunked', 'status': 400}>, content <{
+  "error": {
+    "code": 400,
+    "message": "Invalid value for field 'resource.name': 'bookielink_router'. Must be a match of regex '(?:[a-z](?:[-a-z0-9]{0,61}[a-z0-9])?)'",
+    "errors": [
+      {
+        "message": "Invalid value for field 'resource.name': 'bookielink_router'. Must be a match of regex '(?:[a-z](?:[-a-z0-9]{0,61}[a-z0-9])?)'",
+        "domain": "global",
+        "reason": "invalid"
+      }
+    ]
+  }
+}
+>
+2025-01-09 10:47:53,700 ERROR    root            (gcloud.compute.routers.create) HTTPError 400: Invalid value for field 'resource.name': 'bookielink_router'. Must be a match of regex '(?:[a-z](?:[-a-z0-9]{0,61}[a-z0-9])?)'

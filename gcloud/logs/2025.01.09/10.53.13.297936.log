@@ -1,0 +1,6 @@
+2025-01-09 10:53:13,314 DEBUG    root            Loaded Command Group: ['gcloud', 'compute']
+2025-01-09 10:53:13,316 DEBUG    root            Loaded Command Group: ['gcloud', 'compute', 'networks']
+2025-01-09 10:53:13,317 DEBUG    root            Loaded Command Group: ['gcloud', 'compute', 'networks', 'vpc_access']
+2025-01-09 10:53:13,318 DEBUG    root            Loaded Command Group: ['gcloud', 'compute', 'networks', 'vpc-access', 'connectors']
+2025-01-09 10:53:13,340 DEBUG    root            Loaded Command Group: ['gcloud', 'compute', 'networks', 'vpc-access', 'connectors', 'describe']
+2025-01-09 10:53:13,345 ERROR    root            (gcloud.compute.networks.vpc-access.connectors.describe) argument (CONNECTOR : --region=REGION): Must be specified.

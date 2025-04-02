@@ -1,0 +1,39 @@
+2025-01-09 10:46:08,693 DEBUG    root            Loaded Command Group: ['gcloud', 'compute']
+2025-01-09 10:46:08,695 DEBUG    root            Loaded Command Group: ['gcloud', 'compute', 'networks']
+2025-01-09 10:46:08,700 DEBUG    root            Loaded Command Group: ['gcloud', 'compute', 'networks', 'list']
+2025-01-09 10:46:08,700 DEBUG    root            Running [gcloud.compute.networks.list] with arguments: []
+2025-01-09 10:46:08,756 DEBUG    root            Chosen display Format:    table(
+      name,
+      x_gcloud_subnet_mode:label=SUBNET_MODE,
+      x_gcloud_bgp_routing_mode:label=BGP_ROUTING_MODE,
+      IPv4Range:label=IPV4_RANGE,
+      gatewayIPv4
+    )
+2025-01-09 10:46:08,756 INFO     root            Display format: "    table(
+      name,
+      x_gcloud_subnet_mode:label=SUBNET_MODE,
+      x_gcloud_bgp_routing_mode:label=BGP_ROUTING_MODE,
+      IPv4Range:label=IPV4_RANGE,
+      gatewayIPv4
+    )"
+2025-01-09 10:46:08,761 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): compute.googleapis.com:443
+2025-01-09 10:46:10,252 DEBUG    urllib3.connectionpool https://compute.googleapis.com:443 "GET /compute/v1/projects/bookielink-dev/global/networks?alt=json&maxResults=500 HTTP/1.1" 200 None
+2025-01-09 10:46:10,282 INFO     root            cache collection=compute.networks api_version=v1 params=['project', 'network']
+2025-01-09 10:46:10,308 INFO     ___FILE_ONLY___ NAME
+2025-01-09 10:46:10,309 INFO     ___FILE_ONLY___      
+2025-01-09 10:46:10,309 INFO     ___FILE_ONLY___ SUBNET_MODE
+2025-01-09 10:46:10,309 INFO     ___FILE_ONLY___   
+2025-01-09 10:46:10,309 INFO     ___FILE_ONLY___ BGP_ROUTING_MODE
+2025-01-09 10:46:10,309 INFO     ___FILE_ONLY___   
+2025-01-09 10:46:10,309 INFO     ___FILE_ONLY___ IPV4_RANGE
+2025-01-09 10:46:10,309 INFO     ___FILE_ONLY___   
+2025-01-09 10:46:10,309 INFO     ___FILE_ONLY___ GATEWAY_IPV4
+2025-01-09 10:46:10,309 INFO     ___FILE_ONLY___ 
+
+2025-01-09 10:46:10,309 INFO     ___FILE_ONLY___ default
+2025-01-09 10:46:10,309 INFO     ___FILE_ONLY___   
+2025-01-09 10:46:10,309 INFO     ___FILE_ONLY___ AUTO
+2025-01-09 10:46:10,309 INFO     ___FILE_ONLY___          
+2025-01-09 10:46:10,309 INFO     ___FILE_ONLY___ REGIONAL
+2025-01-09 10:46:10,309 INFO     ___FILE_ONLY___ 
+

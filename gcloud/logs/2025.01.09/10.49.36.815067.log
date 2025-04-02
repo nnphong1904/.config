@@ -1,0 +1,13 @@
+2025-01-09 10:49:36,815 DEBUG    root            Loaded Command Group: ['gcloud', 'services']
+2025-01-09 10:49:36,821 DEBUG    root            Loaded Command Group: ['gcloud', 'services', 'enable']
+2025-01-09 10:49:36,821 DEBUG    root            Running [gcloud.services.enable] with arguments: [SERVICE:1: "['vpcaccess.googleapis.com']"]
+2025-01-09 10:49:36,844 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): serviceusage.googleapis.com:443
+2025-01-09 10:49:38,730 DEBUG    urllib3.connectionpool https://serviceusage.googleapis.com:443 "POST /v1/projects/bookielink-dev/services/vpcaccess.googleapis.com:enable?alt=json HTTP/1.1" 200 None
+2025-01-09 10:49:38,796 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): serviceusage.googleapis.com:443
+2025-01-09 10:49:40,180 DEBUG    urllib3.connectionpool https://serviceusage.googleapis.com:443 "GET /v1/operations/acf.p2-510026108535-f580992c-823c-4699-ba44-cd272fd945d7?alt=json HTTP/1.1" 200 None
+2025-01-09 10:49:42,683 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): serviceusage.googleapis.com:443
+2025-01-09 10:49:44,065 DEBUG    urllib3.connectionpool https://serviceusage.googleapis.com:443 "GET /v1/operations/acf.p2-510026108535-f580992c-823c-4699-ba44-cd272fd945d7?alt=json HTTP/1.1" 200 None
+2025-01-09 10:49:44,113 INFO     ___FILE_ONLY___ Operation "operations/acf.p2-510026108535-f580992c-823c-4699-ba44-cd272fd945d7" finished successfully.
+
+2025-01-09 10:49:44,114 DEBUG    root            Chosen display Format:none
+2025-01-09 10:49:44,114 INFO     root            Display format: "none"

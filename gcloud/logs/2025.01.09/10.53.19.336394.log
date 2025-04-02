@@ -1,0 +1,64 @@
+2025-01-09 10:53:19,349 DEBUG    root            Loaded Command Group: ['gcloud', 'compute']
+2025-01-09 10:53:19,350 DEBUG    root            Loaded Command Group: ['gcloud', 'compute', 'networks']
+2025-01-09 10:53:19,351 DEBUG    root            Loaded Command Group: ['gcloud', 'compute', 'networks', 'vpc_access']
+2025-01-09 10:53:19,351 DEBUG    root            Loaded Command Group: ['gcloud', 'compute', 'networks', 'vpc-access', 'connectors']
+2025-01-09 10:53:19,362 DEBUG    root            Loaded Command Group: ['gcloud', 'compute', 'networks', 'vpc-access', 'connectors', 'describe']
+2025-01-09 10:53:19,366 DEBUG    root            Running [gcloud.compute.networks.vpc-access.connectors.describe] with arguments: [--region: "us-central1", CONNECTOR: "bookielink-dev-connector"]
+2025-01-09 10:53:19,385 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): vpcaccess.googleapis.com:443
+2025-01-09 10:53:20,620 DEBUG    urllib3.connectionpool https://vpcaccess.googleapis.com:443 "GET /v1/projects/bookielink-dev/locations/us-central1/connectors/bookielink-dev-connector?alt=json HTTP/1.1" 200 None
+2025-01-09 10:53:20,668 DEBUG    root            Chosen display Format:default
+2025-01-09 10:53:20,669 INFO     root            Display format: "default"
+2025-01-09 10:53:20,693 INFO     ___FILE_ONLY___ ipCidrRange
+2025-01-09 10:53:20,693 INFO     ___FILE_ONLY___ :
+2025-01-09 10:53:20,693 INFO     ___FILE_ONLY___  
+2025-01-09 10:53:20,693 INFO     ___FILE_ONLY___ 10.8.0.0/28
+2025-01-09 10:53:20,693 INFO     ___FILE_ONLY___ 
+
+2025-01-09 10:53:20,693 INFO     ___FILE_ONLY___ machineType
+2025-01-09 10:53:20,693 INFO     ___FILE_ONLY___ :
+2025-01-09 10:53:20,693 INFO     ___FILE_ONLY___  
+2025-01-09 10:53:20,693 INFO     ___FILE_ONLY___ e2-micro
+2025-01-09 10:53:20,693 INFO     ___FILE_ONLY___ 
+
+2025-01-09 10:53:20,694 INFO     ___FILE_ONLY___ maxInstances
+2025-01-09 10:53:20,694 INFO     ___FILE_ONLY___ :
+2025-01-09 10:53:20,694 INFO     ___FILE_ONLY___  
+2025-01-09 10:53:20,694 INFO     ___FILE_ONLY___ 10
+2025-01-09 10:53:20,694 INFO     ___FILE_ONLY___ 
+
+2025-01-09 10:53:20,694 INFO     ___FILE_ONLY___ maxThroughput
+2025-01-09 10:53:20,694 INFO     ___FILE_ONLY___ :
+2025-01-09 10:53:20,694 INFO     ___FILE_ONLY___  
+2025-01-09 10:53:20,694 INFO     ___FILE_ONLY___ 1000
+2025-01-09 10:53:20,694 INFO     ___FILE_ONLY___ 
+
+2025-01-09 10:53:20,694 INFO     ___FILE_ONLY___ minInstances
+2025-01-09 10:53:20,694 INFO     ___FILE_ONLY___ :
+2025-01-09 10:53:20,694 INFO     ___FILE_ONLY___  
+2025-01-09 10:53:20,694 INFO     ___FILE_ONLY___ 2
+2025-01-09 10:53:20,694 INFO     ___FILE_ONLY___ 
+
+2025-01-09 10:53:20,694 INFO     ___FILE_ONLY___ minThroughput
+2025-01-09 10:53:20,694 INFO     ___FILE_ONLY___ :
+2025-01-09 10:53:20,694 INFO     ___FILE_ONLY___  
+2025-01-09 10:53:20,694 INFO     ___FILE_ONLY___ 200
+2025-01-09 10:53:20,694 INFO     ___FILE_ONLY___ 
+
+2025-01-09 10:53:20,694 INFO     ___FILE_ONLY___ name
+2025-01-09 10:53:20,694 INFO     ___FILE_ONLY___ :
+2025-01-09 10:53:20,694 INFO     ___FILE_ONLY___  
+2025-01-09 10:53:20,695 INFO     ___FILE_ONLY___ projects/bookielink-dev/locations/us-central1/connectors/bookielink-dev-connector
+2025-01-09 10:53:20,695 INFO     ___FILE_ONLY___ 
+
+2025-01-09 10:53:20,695 INFO     ___FILE_ONLY___ network
+2025-01-09 10:53:20,695 INFO     ___FILE_ONLY___ :
+2025-01-09 10:53:20,695 INFO     ___FILE_ONLY___  
+2025-01-09 10:53:20,695 INFO     ___FILE_ONLY___ default
+2025-01-09 10:53:20,695 INFO     ___FILE_ONLY___ 
+
+2025-01-09 10:53:20,695 INFO     ___FILE_ONLY___ state
+2025-01-09 10:53:20,695 INFO     ___FILE_ONLY___ :
+2025-01-09 10:53:20,695 INFO     ___FILE_ONLY___  
+2025-01-09 10:53:20,695 INFO     ___FILE_ONLY___ READY
+2025-01-09 10:53:20,695 INFO     ___FILE_ONLY___ 
+

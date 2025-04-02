@@ -1,0 +1,94 @@
+2025-01-09 11:24:48,849 DEBUG    root            Loaded Command Group: ['gcloud', 'domains']
+2025-01-09 11:24:48,850 DEBUG    root            Loaded Command Group: ['gcloud', 'domains', 'registrations']
+2025-01-09 11:24:48,859 DEBUG    root            Loaded Command Group: ['gcloud', 'domains', 'registrations', 'list']
+2025-01-09 11:24:48,862 DEBUG    root            Running [gcloud.domains.registrations.list] with arguments: []
+2025-01-09 11:24:48,883 DEBUG    root            Chosen display Format:table(
+    name.scope("registrations"):label=DOMAIN,
+    state:label=STATE,
+    managementSettings.renewalMethod:label=RENEWAL_METHOD,
+    expireTime:label=EXPIRE_TIME
+)
+
+2025-01-09 11:24:48,883 INFO     root            Display format: "table(
+    name.scope("registrations"):label=DOMAIN,
+    state:label=STATE,
+    managementSettings.renewalMethod:label=RENEWAL_METHOD,
+    expireTime:label=EXPIRE_TIME
+)
+"
+2025-01-09 11:24:48,887 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): domains.googleapis.com:443
+2025-01-09 11:24:50,113 DEBUG    urllib3.connectionpool https://domains.googleapis.com:443 "GET /v1/projects/bookielink-dev/locations/global/registrations?alt=json HTTP/1.1" 403 None
+2025-01-09 11:24:50,161 DEBUG    root            Chosen display Format:value(links.flatten(show="values",separator="
+"))
+2025-01-09 11:24:50,184 DEBUG    root            Chosen display Format:default
+2025-01-09 11:24:50,185 DEBUG    root            Chosen display Format:value(links.flatten(show="values",separator="
+"))
+2025-01-09 11:24:50,186 DEBUG    root            Chosen display Format:default
+2025-01-09 11:24:50,186 DEBUG    root            Chosen display Format:value(links.flatten(show="values",separator="
+"))
+2025-01-09 11:24:50,187 DEBUG    root            Chosen display Format:default
+2025-01-09 11:24:50,191 DEBUG    root            Chosen display Format:value(links.flatten(show="values",separator="
+"))
+2025-01-09 11:24:50,191 DEBUG    root            Chosen display Format:default
+2025-01-09 11:24:50,187 DEBUG    root            (gcloud.domains.registrations.list) PERMISSION_DENIED: Cloud Domains API has not been used in project bookielink-dev before or it is disabled. Enable it by visiting https://console.developers.google.com/apis/api/domains.googleapis.com/overview?project=bookielink-dev then retry. If you enabled this API recently, wait a few minutes for the action to propagate to our systems and retry. This command is authenticated as phong@miyagami.com which is the active account specified by the [core/account] property.
+Google developers console API activation
+https://console.developers.google.com/apis/api/domains.googleapis.com/overview?project=bookielink-dev
+- '@type': type.googleapis.com/google.rpc.ErrorInfo
+  domain: googleapis.com
+  metadata:
+    consumer: projects/bookielink-dev
+    service: domains.googleapis.com
+  reason: SERVICE_DISABLED
+Traceback (most recent call last):
+  File "/opt/homebrew/Caskroom/google-cloud-sdk/504.0.1/google-cloud-sdk/lib/googlecloudsdk/calliope/cli.py", line 998, in Execute
+    resources = calliope_command.Run(cli=self, args=args)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Caskroom/google-cloud-sdk/504.0.1/google-cloud-sdk/lib/googlecloudsdk/calliope/backend.py", line 845, in Run
+    display_info=self.ai.display_info).Display()
+                                       ^^^^^^^^^
+  File "/opt/homebrew/Caskroom/google-cloud-sdk/504.0.1/google-cloud-sdk/lib/googlecloudsdk/calliope/display.py", line 487, in Display
+    self._printer.Print(self._resources)
+  File "/opt/homebrew/Caskroom/google-cloud-sdk/504.0.1/google-cloud-sdk/lib/googlecloudsdk/core/resource/resource_printer_base.py", line 301, in Print
+    for resource in resources:
+  File "/opt/homebrew/Caskroom/google-cloud-sdk/504.0.1/google-cloud-sdk/lib/third_party/apitools/base/py/list_pager.py", line 120, in YieldFromList
+    response = getattr(service, method)(request,
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Caskroom/google-cloud-sdk/504.0.1/google-cloud-sdk/lib/googlecloudsdk/generated_clients/apis/domains/v1/domains_v1_client.py", line 374, in List
+    return self._RunMethod(
+           ^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Caskroom/google-cloud-sdk/504.0.1/google-cloud-sdk/lib/third_party/apitools/base/py/base_api.py", line 744, in _RunMethod
+    http_response = http_wrapper.MakeRequest(
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Caskroom/google-cloud-sdk/504.0.1/google-cloud-sdk/lib/third_party/apitools/base/py/http_wrapper.py", line 359, in MakeRequest
+    retry_func(ExceptionRetryArgs(http, http_request, e, retry,
+  File "/opt/homebrew/Caskroom/google-cloud-sdk/504.0.1/google-cloud-sdk/lib/third_party/apitools/base/py/http_wrapper.py", line 304, in HandleExceptionsAndRebuildHttpConnections
+    raise retry_args.exc
+  File "/opt/homebrew/Caskroom/google-cloud-sdk/504.0.1/google-cloud-sdk/lib/third_party/apitools/base/py/http_wrapper.py", line 348, in MakeRequest
+    return _MakeRequestNoRetry(
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Caskroom/google-cloud-sdk/504.0.1/google-cloud-sdk/lib/third_party/apitools/base/py/http_wrapper.py", line 406, in _MakeRequestNoRetry
+    check_response_func(response)
+  File "/opt/homebrew/Caskroom/google-cloud-sdk/504.0.1/google-cloud-sdk/lib/googlecloudsdk/api_lib/util/apis.py", line 231, in _CheckResponse
+    _CheckForApiEnablementError(response_as_error)
+  File "/opt/homebrew/Caskroom/google-cloud-sdk/504.0.1/google-cloud-sdk/lib/googlecloudsdk/api_lib/util/apis.py", line 197, in _CheckForApiEnablementError
+    PromptToEnableApi(*enablement_info)
+  File "/opt/homebrew/Caskroom/google-cloud-sdk/504.0.1/google-cloud-sdk/lib/googlecloudsdk/api_lib/util/apis.py", line 180, in PromptToEnableApi
+    raise exception
+googlecloudsdk.api_lib.util.exceptions.HttpException: PERMISSION_DENIED: Cloud Domains API has not been used in project bookielink-dev before or it is disabled. Enable it by visiting https://console.developers.google.com/apis/api/domains.googleapis.com/overview?project=bookielink-dev then retry. If you enabled this API recently, wait a few minutes for the action to propagate to our systems and retry. This command is authenticated as phong@miyagami.com which is the active account specified by the [core/account] property.
+Google developers console API activation
+https://console.developers.google.com/apis/api/domains.googleapis.com/overview?project=bookielink-dev
+- '@type': type.googleapis.com/google.rpc.ErrorInfo
+  domain: googleapis.com
+  metadata:
+    consumer: projects/bookielink-dev
+    service: domains.googleapis.com
+  reason: SERVICE_DISABLED
+2025-01-09 11:24:50,192 ERROR    root            (gcloud.domains.registrations.list) PERMISSION_DENIED: Cloud Domains API has not been used in project bookielink-dev before or it is disabled. Enable it by visiting https://console.developers.google.com/apis/api/domains.googleapis.com/overview?project=bookielink-dev then retry. If you enabled this API recently, wait a few minutes for the action to propagate to our systems and retry. This command is authenticated as phong@miyagami.com which is the active account specified by the [core/account] property.
+Google developers console API activation
+https://console.developers.google.com/apis/api/domains.googleapis.com/overview?project=bookielink-dev
+- '@type': type.googleapis.com/google.rpc.ErrorInfo
+  domain: googleapis.com
+  metadata:
+    consumer: projects/bookielink-dev
+    service: domains.googleapis.com
+  reason: SERVICE_DISABLED
