@@ -33,3 +33,30 @@ zoxide init fish | source
 # bun
 set --export BUN_INSTALL "$HOME/.bun"
 set --export PATH $BUN_INSTALL/bin $PATH
+
+# Git aliases
+alias g="git"
+alias ga="git add"
+alias gaa="git add --all"
+alias gb="git branch"
+alias gca="git commit --amend"
+alias gcm="git commit -m"
+alias gco="git checkout"
+alias gd="git diff"
+alias gl="git log --oneline"
+alias gps="git push"
+alias gpl="git pull"
+alias gs="git status"
+alias gst="git stash"
+alias gsw="git switch"
+
+set --universal nvm_default_version v22.17.0
+
+#rvm
+bass source $HOME/.rvm/scripts/rvm
+
+set -gx NVM_DIR "$HOME/.nvm"
+
+
+
+alias claude="/Users/phongnguyen/.claude/local/claude"
